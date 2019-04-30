@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'MyFont';
+	src:  url('./fonts/NotoSansKR-Regular.woff2') format('woff2'),
+		  url('./fonts/NotoSansKR-Regular.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+.hello {
+	font-family: 'MyFont';
+	color: red;
+	background: url('./icon.png');
+	& span{
+		color:yellow;
+	}
+}
+
+body{
+	background:#eee;
+	&:after{
+		content:'HELLO WOLRD!!! Webpack TEST~';
+
+	}
+}
+
